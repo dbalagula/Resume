@@ -1,0 +1,203 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Daniel Balagula} \\ \vspace{1pt}
+    \small 201-527-0709 $|$ \href{mailto:dbalagula@nyu.edu}{\underline{dbalagula@nyu.edu}} $|$ 
+    \href{https://linkedin.com/in/dbalagula}{\underline{linkedin.com/in/dbalagula/}} $|$
+    \href{https://github.com/dbalagula}{\underline{github.com/dbalagula}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New York University}{New York, NY}
+      {Bachelor of Arts in Computer Science}{Aug. 2013 -- May 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{November 2019 -- Present}
+      {Intelligent Retail Lab}{Hoboken, NJ}
+      \resumeItemListStart
+        \resumeItem{Developed backend pipelines for communicating with internal and external stakeholders}
+        \resumeItem{Developed services to assist with serving visualized and human-readable machine-learning model results}
+        \resumeItem{Implemented alerting and monitoring with Prometheus to ensure system stability}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{June 2018 -- November 2019}
+      {Quantum Circuits}{New Haven, CT}
+      \resumeItemListStart
+        \resumeItem{Joined the company as the first software engineer and helped build software that was essential to funding
+goals}
+        \resumeItem{Collaborated extensively with non-software engineers to understand the requirements of the company's
+unique complex systems and designed and built core infrastructure}
+        \resumeItem{Implemented highly parallel low-level code that required extremely high precision execution}
+        \resumeItem{Laid out foundations for development workflows and pipelines for many of the tools now in use at the
+company}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{June 2017 -- June 2018}
+      {IBM}{Rochester, MN}
+      \resumeItemListStart
+        \resumeItem{Built, maintained, and suggested improvements for a tool that generated Terraform templates (technology
+that deploys and tracks the lifecycle of a cloud deployment) used for enterprise middleware software}
+        \resumeItem{Developed a game in Java to test the generated dungeons}
+        \resumeItem{Updated “infrastructure as code” files for cloud deployments to keep up with best practices and version
+changes}
+        \resumeItem{Tested and debugged deployments of cloud infrastructure}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{PyZTrending}}{Aug. 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed Python library that is able to determine arbitrary trending data given a historical dataset}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Plainview}}{Jan. 2017 -- June 2017}
+          \resumeItemListStart
+            \resumeItem{Received grant from CUNY Startups on project involving archival of web content}
+            \resumeItem{Designed and implemented the full stack for the web application}
+            \resumeItem{Was able to scrape, analyze, and monitor future changes for news content for dozens of different online publications}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Typescript} \\
+     \textbf{Developer Tools}{: Git, Docker, Kubernetes, Helm} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
